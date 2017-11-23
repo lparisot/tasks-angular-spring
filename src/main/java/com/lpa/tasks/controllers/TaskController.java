@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(TaskController.BASE_URL)
+@CrossOrigin
 public class TaskController {
     public static final String BASE_URL = "/api/tasks";
 
