@@ -17,4 +17,11 @@ export class TasksListComponent implements OnInit {
     this.tasks.push(new Task(3, "Task 3", false, "22/11/2017"));
   }
 
+  getDueDateLabel(task: Task) {
+    return task.completed ? 'label-success' : 'label-primary';
+  }
+
+  onTaskChange(event, task) {
+    //this.taskService.saveTask(task, event.target.checked).subscribe();
+  }
 }
