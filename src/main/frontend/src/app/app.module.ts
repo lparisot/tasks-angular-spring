@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RestangularModule } from 'ngx-restangular';
 
@@ -23,6 +24,7 @@ import { TaskService } from 'app/tasks/task.service';
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     RestangularModule.forRoot(RestangularConfigFactory)
   ],
   providers: [
